@@ -1,3 +1,4 @@
+  
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,19 +57,47 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    font-weight: thick;
 }
 
 p {
     line-height: 1.4;
 }
 
+.anchor:hover {
+    color: blue;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+
+.future {
+    margin-bottom: 25px;
+    padding-top: 30px;
+}
+a  {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+	margin-left: 70px;
+	text-decoration: none;
+}
+
+.logo {
+    display: inline;
+}
+
+.lambda-about {
+    margin: 30px 10px 0px 20px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 25px;
 }
 
 .top-content {
@@ -94,11 +123,19 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
+.middle {
+    display: flex;
+    flex-wrap: wrap; 
+}
+img {
+    margin: 30px 0 30px 0;
+}
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .middle-content .boxes .box {
@@ -110,6 +147,42 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+.about-box1  {
+	border-bottom: 1px dashed black;
+    padding-bottom: 25px;
+	margin: 0 15px 10px 15px;
+	width: 360px;
+	display: flex;
+    flex-wrap: wrap;
+	}
+
+.about-box2  {
+	border-bottom: 1px dashed black;
+    padding-bottom: 25px;
+	margin: 0 10px 10px 15px;
+	width: 360px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-box3 {
+    border-bottom: 1px dashed black;
+    margin: 0 15px 10px 15px;
+    padding-bottom: 25px;
+	width: 360px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-box4 {
+	border-bottom: 1px dashed black;
+    margin: 0 10px 10px 15px;
+    padding-bottom: 25px;
+	width: 360px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .bottom-content {
@@ -125,7 +198,11 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+.bottom-info {
+    margin: 30px 10px 0px 20px;
+    padding-bottom: 25px;
 
+}
 footer {
     width: 100%;
     background: black;
@@ -138,6 +215,16 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+}
+button{
+	padding: 10px 25px;
+	border: 2px solid #000;
+	color: black;
+	margin-top: 30px;
+	background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 footer nav a {
